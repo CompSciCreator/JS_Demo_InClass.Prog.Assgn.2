@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ABCs of CSS</title>
+
+    <!-- Connect your css file -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./js/index.js" defer></script>
+  </head>
+  <body>
+    <!-- start of header -->
+    <header>
+      <h1>
+        Welcome to the Interactive ABCs of CSS Technology learning Website
+      </h1>
+      <p>
+        Click on the buttons below to reveal and learn the CSS technology
+        features of the corresponding letters
+      </p>
+    </header>
+    <!-- end of header -->
+    <!-- start of main -->
+    <main>
+    
+      <!-- create button content -->
+      <div class="buttons">
+        <button id="buttonA" onclick="toggle('A')">A</button>
+        <button id="buttonB" onclick="toggle('B')">B</button>
+        <button id="buttonC" onclick="toggle('C')">C</button>
+      </div>
+      <!-- end of button content -->
+      <!-- button hide result -->
+      <div id="btnA" class="content">
+        <div class="img-display">
+          <img src="./assets/img/css-letter-a.png" alt="content-image" />
+        </div>
+        <button class= "hide" onclick="hideContent('A')">Hide Result</button>
+      </div>
+
+      <div id="btnB" class="content">
+        <div class="img-display">
+          <img src="./assets/img/css-letter-b.png" alt="content-image" />
+        </div>
+        <button class= "hide" onclick="hideContent('B')">Hide Result</button>
+      </div>
+
+      <div id="btnC" class="content">
+        <div class="img-display">
+          <img src="./assets/img/css-letter-c.png" alt="content-image" />
+        </div>
+        <button class= "hide" onclick="hideContent('C')">Hide Result</button>
+      </div>
+    </main>
+  </body>
+</html>
